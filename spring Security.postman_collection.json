@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "c7c92be2-ae7a-419c-a6f6-c5e13e392a35",
+		"name": "spring Security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"mohamed123ss\",\r\n    \"email\":\"mohamed.derbali@esprit.tneessm\",\r\n    \"password\":\"12345678\",\r\n    \"role\":[\r\n        \"mod\",\"user\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"username\":\"mohamed\",\r\n        \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/auth/signin"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2hhbWVkIiwiaWF0IjoxNjQ5OTY5NzM1LCJleHAiOjE2NTAwNTYxMzV9.ghB5j3RKhEd-FMruEYhcItBGZxemzIdUmbkg2y9pdED8dKVXU1J_JcxZ6-BZK45fqHjXezX3sPASDKBBz9PnlA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/api/test/user"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2hhbWVkIiwiaWF0IjoxNjQ5OTY5NzM1LCJleHAiOjE2NTAwNTYxMzV9.ghB5j3RKhEd-FMruEYhcItBGZxemzIdUmbkg2y9pdED8dKVXU1J_JcxZ6-BZK45fqHjXezX3sPASDKBBz9PnlA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/api/test/user"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/api/user/profile"
+			},
+			"response": []
+		}
+	]
+}
