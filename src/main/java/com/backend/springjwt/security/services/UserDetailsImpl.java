@@ -1,4 +1,4 @@
-package com.bezkoder.springjwt.security.services;
+package com.backend.springjwt.security.services;
 
 import java.util.Collection;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.bezkoder.springjwt.models.User;
+import com.backend.springjwt.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class UserDetailsImpl implements UserDetails {

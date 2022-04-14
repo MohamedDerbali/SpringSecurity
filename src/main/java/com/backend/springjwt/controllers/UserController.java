@@ -1,4 +1,4 @@
-package com.bezkoder.springjwt.controllers;
+package com.backend.springjwt.controllers;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bezkoder.springjwt.models.User;
-import com.bezkoder.springjwt.security.jwt.AuthTokenFilter;
-import com.bezkoder.springjwt.security.jwt.JwtUtils;
-import com.bezkoder.springjwt.security.services.UserDetailsServiceImpl;
+import com.backend.springjwt.models.User;
+import com.backend.springjwt.security.jwt.AuthTokenFilter;
+import com.backend.springjwt.security.jwt.JwtUtils;
+import com.backend.springjwt.security.services.UserDetailsServiceImpl;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController

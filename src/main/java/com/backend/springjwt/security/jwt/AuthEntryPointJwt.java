@@ -1,4 +1,4 @@
-package com.bezkoder.springjwt.security.jwt;
+package com.backend.springjwt.security.jwt;
 
 import java.io.IOException;
 import java.util.HashMap;

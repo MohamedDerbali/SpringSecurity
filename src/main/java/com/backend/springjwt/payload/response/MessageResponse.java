@@ -1,4 +1,4 @@
-package com.bezkoder.springjwt.payload.response;
+package com.backend.springjwt.payload.response;
 
 public class MessageResponse {
   private String message;
